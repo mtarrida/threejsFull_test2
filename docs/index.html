@@ -1,0 +1,60 @@
+<!-- npm start -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Three.js Tutorials by Sean Bradley : https://sbcode.net/threejs/</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  </style>
+  <script type="importmap">
+        {
+          "imports": {
+            "three": "./build/three.module.js",
+            "three/examples/jsm/controls/OrbitControls":"./jsm/controls/OrbitControls.js",
+            "three/examples/jsm/libs/stats.module":"./jsm/libs/stats.module.js",
+            "three/examples/jsm/libs/dat.gui.module":"./jsm/libs/dat.gui.module.js"
+          }
+        }
+    </script>
+
+
+</head>
+
+<link rel="stylesheet" href="style01.css">
+
+<body>
+  <input id="myInput" type="file" style="visibility:hidden; display: none" />
+
+  <!-- <script type="module" src="client.js"></script> -->
+  <!-- /////////////
+  ///////////// -->
+  <script type="module" src="./threejsx/IDF_app.js"></script>
+  <!-- /////////////
+  ///////////// -->
+
+  <!-- <script type="module" src="./learning/app1.js"></script> -->
+  <!-- <script type="module" src="./utils/earth.js"></script> -->
+  <!-- <div id="labels"></div> -->
+
+  <!-- // va amb exemple cameres -->
+  <!-- <div id="info"><a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - cameras<br/>
+		<b>O</b> orthographic <b>P</b> perspective
+		</div> -->
+  <!-- <script type="module" src="./utils/camsSwitchExample.js"></script> -->
+
+  <!-- <script type="module" src="./learning/cubeBasics.js"></script> -->
+  <!-- <script type="module" src="./learning/cubeBasics3.js"></script> -->
+  <!-- <script type="module" src="./learning/xxx.js"></script> -->
+
+  <div id='container' style="display: none">
+    <div id='subContainer'>
+      <!-- he hagut de crear aquest childelement per anular l'efecte style direction: ltr; que em desordenava el contingut  -->
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+:root {
+    --hlcolor: rgb(255, 255, 255);
+    --labelsizeLong: 75px;
+    --labelsizeHeight: 30px;
+    --hlGreenLightColor: rgb(140, 255, 140);
+    --fontSize: 20px;
+    --font-family: Consolas, monaco, monospace;
+  }
+  
+  html, body {
+    overflow: hidden;
+    margin: 0px;
+    background-color: var(--hlcolor);;
+    font-size: var(--fontSize);
+    font-family: Consolas, monaco, monospace;
+    }
+
+
+  #container {
+    /* position:right; */
+    /* float: right !important; */
+    /* width: 30%; */
+    /* opacity: 0.5; */
+    /* background-color:rgba(0, 0, 0, 0.5); */
+
+    /* font-family: "Lucida Grande", sans-serif; */
+    font-family: var(--font-family);
+    padding-left: 10px;
+    position: absolute;
+    float: left !important;
+    text-align: left;
+
+    top: 0px;
+    /* right: 5%; */
+    /* left: 5%; */
+    /* height: 500px; */
+    height: 100%;
+    /* width: 300px; */
+    z-index: 99;
+
+    overflow-y: scroll;
+    direction: rtl; 
+    }
+
+    #subContainer {
+  
+      /* font-family: "Lucida Grande", sans-serif;
+      padding-left: 10px;
+      position: absolute;
+      float: left !important;
+      text-align: left;
+  
+      top: 0px;
+      height: 100%;
+      z-index: 99;     */ 
+      direction: ltr;  
+      }
+
+    /*This cause the division content
+        to be displayed from right to left */
+        /* .Flipped{          
+          direction: rtl;
+      } */
+          
+      /* Designing for scroll-bar */
+      /* ::-webkit-scrollbar {
+          width: 6px;
+      } */
+    
+      /* Track */
+      /* ::-webkit-scrollbar-track {
+          background: gainsboro;
+          border-radius: 5px;
+      } */
+    
+      /* Handle */
+      /* ::-webkit-scrollbar-thumb {
+          background: black;
+          border-radius: 5px;
+      } */
+    
+      /* Handle on hover */
+      /* ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+      } */
+
+      /* /////////// */
+
+      .scrolling-area {
+        /* max-width: 250px; */
+        /* max-height: 250px; */
+        overflow: auto;
+        padding: 1rem;
+        background: white;
+        direction: rtl;
+      }
+      
+      .scrolling-element-inside {
+        direction: rtl;
+      }
+
+      /* //////////////// */
+
+    
+
+    /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* GUI */
+
+.dg {
+  color: rgb(0, 0, 0) !important;
+  text-shadow: 0 0px 0 #111 !important;
+}
+
+.dg li.title {
+  background: rgba(0, 0, 0, 0.30) !important;
+}
+
+.dg.a  {
+  /* float: left !important; */
+}
+
+.dg ul {
+  background: rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 100 !important;
+}
+
+.dg .cr {
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+
+.dg .cr {
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.dg.main .close-button {
+  background-color: rgba(40, 211, 54, 0.637) !important;
+}
+
+
+.dg .c .slider {
+  background: rgba(255, 255, 255, 0.548) !important;
+}
+
+.dg .c .slider-fg {
+  background-color: rgba(40, 211, 54, 0.637) !important;
+}
+
+/* no ho poso pq tb afectaria als camps de colors 
+.dg .c input[type=text] { 
+  background: rgba(255, 255, 255, 0.548) !important;
+ } */
+
+.dg .cr.number input[type=text] {
+  background: rgba(255, 255, 255, 0.548) !important;
+
+}
+
+.dg .cr.number input[type=text] {
+  color: rgb(0, 0, 0) !important;
+}
+
+/* label */
+.label {
+  color: rgb(0, 0, 0);
+  /* font-family: sans-serif; */
+  font-family: var(--font-family);
+  font-size: var(--fontSize);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position: absolute; */
+
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(255, 0, 0,0.5);
+  text-align: center;
+
+  /* width: var(--labelsizeLong);
+  height: var(--labelsizeHeight); */
+  /* -moz-border-radius: var(--labelsizeHeight);
+  -webkit-border-radius: var(--labelsizeHeight);
+  border-radius: var(--labelsizeHeight); */
+
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+
+}
+
+.clickableText {
+  background: rgba(100,100,100,0.5);
+  font-weight: bold;
+  font-size: var(--fontSize);
+  }
+  
+.clickableText:hover {
+      background-color: var(--hlGreenLightColor);
+      font-weight: bold;
+    }
+
+.longtext {
+  line-height: 13px !important;
+  height: 40px !important;
+}    

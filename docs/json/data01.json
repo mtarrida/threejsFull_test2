@@ -1,0 +1,42 @@
+[
+    {
+        "name": "B:1",
+        "reportId": "a",
+        "energy": "0"
+    },
+    {
+        "name": "B1:1",
+        "reportId": "b",
+        "energy": "0.15"
+    },
+    {
+        "name": "B:2",
+        "reportId": "c",
+        "energy": "0.5625"
+    },
+    {
+        "name": "Bloque2:Zona1",
+        "reportId": "d",
+        "energy": "0.375"
+    },
+    {
+        "name": "B1:2",
+        "reportId": "e",
+        "energy": "0.125"
+    },
+    {
+        "name": "B:3",
+        "reportId": "f",
+        "energy": "1"
+    },
+    {
+        "name": "Bloque1:Zona1",
+        "reportId": "g",
+        "energy": "0.95"
+    },
+    {
+        "name": "B1:Zona1",
+        "reportId": "h",
+        "energy": "0.75"
+    }
+]

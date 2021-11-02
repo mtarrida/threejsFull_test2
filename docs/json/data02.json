@@ -1,0 +1,133 @@
+[
+    {
+        "name": "Heating & cooling by air supply",
+        "index": "0",
+        "color": "#1500ff",
+        "zoneIdfNames": [
+            "1P1:1XXEB",
+            "2P2:2LTBC",
+            "X1PINT:X1LTAX01",
+            "X1PINT:X1LocImX04",
+            "X1PINT:X1LocImX03",
+            "X1PINT:X1LocImX01",
+            "X1PINT:X1LocImX02",
+            "X1PINT:X1LocImCoAD",
+            "9P9:9LTAC",
+            "7P7:7LTAC",
+            "0PTERRAC:0XEC",
+            "0PTERRAD:0XXED",
+            "1P1:1XXEC",
+            "4P4:4LTAD",
+            "3P3:3LTAC",
+            "2P2:2XXEC",
+            "5P5:5LTAC",
+            "6P6:6LTAC",
+            "8P8:8LTAC",
+            "X1PINT:Autorimessa",
+            "X1PINT:X1SAsA",
+            "X1PINT:X1CTrACX01"
+        ]
+    },
+    {
+        "name": "VRFsys + threatedOAsys",
+        "index": "1",
+        "color": "#00ff00",
+        "zoneIdfNames": [
+            "X1PINT:X1CTrACX02",
+            "X1PINT:X1LUPSAC",
+            "0PTERRAC:0CRAC"
+        ]
+    },
+    {
+        "name": "FCU + threatedOAsys",
+        "index": "2",
+        "color": "#ff00f0",
+        "zoneIdfNames": [
+            "X1PINT:X1ComL02AD",
+            "0PTERRAD:0ComAD",
+            "1P1:1ComAD",
+            "X1PINT:X1UffD",
+            "X1PINT:X1UffB",
+            "0PTERRAD:0UffD",
+            "1P1:1SAsAD",
+            "1P1:1UffA",
+            "0PTERRAC:0UffC",
+            "1P1:1UffC",
+            "1P1:1UffB",
+            "2P2:2UffB",
+            "2P2:2UffC",
+            "9P9:9UffA",
+            "9P9:9BOAX02",
+            "7P7:7UffA",
+            "7P7:7BOAX02",
+            "4P4:4UffA",
+            "4P4:4BOAX02",
+            "3P3:3UffA",
+            "3P3:3BOAX02",
+            "5P5:5UffA",
+            "5P5:5BOAX02",
+            "6P6:6BOAX02",
+            "6P6:6UffA",
+            "8P8:8UffA",
+            "8P8:8BOAX02",
+            "0PTERRAC:0ComAC",
+            "0PTERRAC:0LobAC",
+            "0PTERRAC:0PavBC",
+            "0PTERRAC:0SAsBC"
+        ]
+    },
+    {
+        "name": "Radiator + unthratedOAsys",
+        "index": "3",
+        "color": "#0000ff",
+        "zoneIdfNames": [
+            "0PTERRAD:0BCoAD",
+            "1P1:1BOB",
+            "2P2:2BOBX01",
+            "9P9:9BOAX01",
+            "7P7:7BOAX01",
+            "4P4:4BOAX01",
+            "3P3:3BOAX01",
+            "5P5:5BOAX01",
+            "6P6:6BOAX01",
+            "8P8:8BOAX01"
+        ]
+    },
+    {
+        "name": "Radiator + threatedOAsys",
+        "index": "4",
+        "color": "#00f0ff",
+        "zoneIdfNames": [
+            "X1PINT:X1BODB",
+            "0PTERRAD:0BODB",
+            "1P1:1BOAD",
+            "0PTERRAC:0BOBC",
+            "1P1:1BOBC",
+            "2P2:2BOBC",
+            "0PTERRAC:0BCoAC",
+            "0PTERRAC:0BRACX01",
+            "X1PINT:X1SpoBCX02",
+            "X1PINT:X1SpoBCX01"
+        ]
+    },
+    {
+        "name": "unthratedOAsys (no heating & cooling)",
+        "index": "5",
+        "color": "#efff00",
+        "zoneIdfNames": [
+            "X1PINT:X1ComL01AD",
+            "X1PINT:X1CorAD"
+        ]
+    },
+    {
+        "name": "FCU + unthratedOAsys",
+        "index": "6",
+        "color": "#ff0000",
+        "zoneIdfNames": [
+            "1P1:1SAsA",
+            "2P2:2SAsA",
+            "1P1:1LTAC",
+            "2P2:2LTAC"
+        ]
+    }
+]

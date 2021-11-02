@@ -1,0 +1,67 @@
+/////////////////////
+ordre de prioritats:
+1/ tema planol d'espais amb zones numero i llista de noms idf emparellat a noms personalitzats
+    1.1 implica poder clicar a zones per passar d'un nivell a l'altre
+    1.2 implica poder guardar configs en arxiu jso q despres es pugui carregar
+
+2/ tema poder posar colors a zones segons json values
+
+3/ tema agrupació sistemes HVAC
+    2.1 aire    
+    2.2 sistemes tè rmics
+
+4/ verifiaccio de tancaments...
+compte que aquest tema es pot fer relativament rapid amb DB
+
+
+
+/////////////////
+tot i que vaig iniciar el htm i three amb aquest video
+https://www.youtube.com/watch?v=zBJXXcFy6iU
+
+en realitat aquest altre video es facil de seguir
+i s'instala correctament el npm
+i suposadament ens ha de servir per fer servir comodament la llibreria three amb IMPORTS
+https://www.youtube.com/watch?v=z9qtGHTqLqQ
+
+pero ambdos fa servir el npm, que és molt pràctic
+pero no la web que es genera és complexa
+i no es pot pujar a github
+
+aixi que per efrho de manera somple haure de fer servir maneres de iniciar la web three.js d'una manera més simple.
+com ara aquests videos
+https://www.youtube.com/watch?v=AyzvVnUlRtQ&t=597s
+https://www.youtube.com/watch?v=8jP4xpga6yY
+
+
+videos mes interessants pujaar npm a github
+tot i que es pot probar algun dia aixo
+https://www.youtube.com/watch?v=BK2pzY9sT0k
+https://www.youtube.com/watch?v=gpTjJk-pt6s 
+https://www.youtube.com/watch?v=dRawg0V6b0w&t=343s
+https://www.youtube.com/watch?v=wL8gCda3pG4
+
+video basic pujar web basica a github
+https://www.youtube.com/watch?v=wL8gCda3pG4
+
+es diu github pages
+https://pages.github.com/
+
+
+
+////////////////
+imports/exports
+JavaScript Modules with Import/Export Syntax (ES6) - JavaScript Tutorial
+https://www.youtube.com/watch?v=s9kNndJLOjg 
+https://www.youtube.com/watch?v=cRHQNNcYf6s 
+
+////////////////
+tema boleanes substraccions de geometries tancades
+https://githubmemory.com/repo/Jiro-Digital/three-csg-ts/issues
+https://codesandbox.io/s/three-csg-sphere-issue-forked-jjet9?file=/src/index.ts
+
+////////////////
+// tema space vtx a shape
+// me comodoe per substreure finestres
+// convertir vtx 3d a shape (vtx 2d) i posar a la posicio correcta
+// https://stackoverflow.com/questions/49020699/how-to-draw-a-flat-shape-in-3-space-in-three-js
