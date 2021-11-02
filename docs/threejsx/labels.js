@@ -274,7 +274,7 @@ function objectsJsonOpacity() {
 
     let parseData;
     // read jason
-    newFetch("../json/data01.json").then((result) => {
+    newFetch("./json/data01.json").then((result) => {
         // let parseData;
         try {
             parseData = JSON.parse(result);
