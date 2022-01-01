@@ -37,7 +37,8 @@ gui(); // millor crear aqui
 
 // degut a la llogica fetch, nomes ho puc fer aixi...
 // newFetch("../models/model_2.idf").then((result) => {
-newFetch("./models/model_2.idf").then((result) => {
+// newFetch("./models/model_2.idf").then((result) => {
+newFetch("./models/in.idf").then((result) => {
     // newFetch("../public/models/model_2.idf").then((result) => {
     idf_fullManageAndSceneAddObjects(result);
     idf_fullManageAndSceneAddObjects_windows(result);

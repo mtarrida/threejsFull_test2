@@ -274,7 +274,50 @@ function objectsJsonOpacity() {
 
     let parseData;
     // read jason
-    newFetch("./json/data01.json").then((result) => {
+    newFetch("./json/data03.json").then((result) => {
+        // let parseData;
+        try {
+            parseData = JSON.parse(result);
+
+            group_getZoneGroups().forEach(Z => {
+
+                let gmaterial = mat_face_transp.clone();
+
+                try {
+                    gmaterial.opacity = parseData.find(j => j.name == Z.userData.parentZone).energy;
+                } catch (error) {
+                    gmaterial.opacity =  0;
+                }
+
+                // let gmaterial_win = gmaterial.clone();
+                // gmaterial_win.opacity = 0;
+                // gmaterial_win.polygonOffset = true;
+                // gmaterial_win.polygonOffsetFactor = -1;
+                // console.log('gmaterial.opacity:', gmaterial.opacity)
+                Z.traverse(o => {
+                    if (o.type == 'Mesh') {
+                        o.material = gmaterial;
+                        try { //no se pq, es necessita el try...
+                            if (o.userData.idfName.includes('_Win')) {
+                                o.material = gmaterial;
+                            }
+                        } catch (error) { }
+                    };
+                })
+            })
+
+        } catch (error) {
+            parseData = result;
+        }
+    });
+
+}
+
+function objectsJsonOpacity_old() {
+
+    let parseData;
+    // read jason
+    newFetch("./json/data02.json").then((result) => {
         // let parseData;
         try {
             parseData = JSON.parse(result);

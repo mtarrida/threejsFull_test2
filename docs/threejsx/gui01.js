@@ -78,7 +78,7 @@ function theRestFolders(thisFolderName) {
 // GUI params
 // ho he fet Global per poder anar afegint...
 export var gui_global_params = {
-    color: '#ffae23',
+    color: '#ff0000',//'#ffae23',
     explotar: 1,
     idfFile: function () {
         clickableLoadTxt.click();

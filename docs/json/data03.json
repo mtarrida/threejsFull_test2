@@ -1,0 +1,17 @@
+[
+    {
+        "name": "B:1",
+        "reportId": "a",
+        "energy": ".8"
+    },
+    {
+        "name": "B1:1",
+        "reportId": "b",
+        "energy": ".8"
+    },
+    {
+        "name": "B1:2",
+        "reportId": "e",
+        "energy": ".8"
+    }
+]

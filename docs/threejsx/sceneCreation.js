@@ -41,7 +41,7 @@ export let controls;
 
 
 
-export function init() {
+export function init(elementToAppend = document.body) {
     // camera.position.set(10, 5, 20);
     camera = camPersp();
     // camera = camOrtho();
@@ -72,7 +72,7 @@ export function init() {
     renderer.setPixelRatio(window.devicePixelRatio);
 
     renderer.setSize(window.innerWidth, window.innerHeight)
-    document.body.appendChild(renderer.domElement)
+    elementToAppend.appendChild(renderer.domElement)
 
     controls = new OrbitControls(camera, labelRenderer.domElement);
     controls.enableDamping = true; //false
@@ -100,7 +100,7 @@ function onWindowResize() {
     cameraPers.updateProjectionMatrix();
 
     try {
-        
+
         // cameraOrtho
         cameraOrtho.left = window.innerWidth / -2;
         cameraOrtho.right = window.innerWidth / 2;
@@ -108,7 +108,7 @@ function onWindowResize() {
         cameraOrtho.bottom = window.innerHeight / -2;
         cameraOrtho.updateProjectionMatrix();
     } catch (error) {
-        
+
     }
 
     // labelRenderer
@@ -123,7 +123,12 @@ export const labelRenderer = new CSS2DRenderer();
 labelRenderer.setSize(window.innerWidth, window.innerHeight);
 labelRenderer.domElement.style.position = 'absolute';
 labelRenderer.domElement.style.top = '0px';
-document.body.appendChild(labelRenderer.domElement);
+
+export function appendRendererLabel(appendended = document.body) {
+    appendended.appendChild(labelRenderer.domElement);
+}
+
+appendRendererLabel();
 
 
 export function render() { //funció render

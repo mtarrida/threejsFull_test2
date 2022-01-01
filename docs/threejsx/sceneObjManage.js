@@ -505,7 +505,7 @@ export function gui_GroupActions() {
         });
 
     f.add(gui_global_params, 'Z_groupsLevels')
-        .min(0).max(200).step(1)
+        .min(0).max(50).step(1)
         .onChange(function (value) {
             floors_Z_explode(value, false);
         });

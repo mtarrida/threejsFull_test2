@@ -11,7 +11,7 @@ class surface {
 }
 
 export let mat_face_transp = new THREE.MeshBasicMaterial({
-    color: 0xf0ff97,
+    color: 0xff0000, //0xf0ff97
     opacity: .7,
     transparent: true,
     // side: THREE.DoubleSide,
@@ -25,7 +25,7 @@ export let mat_windows_transp = new THREE.MeshBasicMaterial({
     side: THREE.DoubleSide,
     // side: THREE.FrontSide,
     polygonOffset: true,
-    polygonOffsetFactor: -1,//0.1,
+    polygonOffsetFactor: -10,//0.1,
 
 });
 
@@ -45,8 +45,8 @@ var mat_lines_blue = new THREE.LineBasicMaterial({
 
 export function gui_idfFolder_addFolder_displayParameters() {
 
-    gui_global_params.face_color = '#f0ff97';
-    gui_global_params.face_opac = 0.7;
+    gui_global_params.face_color = '#ff0000'; //'#f0ff97';
+    gui_global_params.face_opac = 0.8;
 
     let idfImportGeneral = gui.__folders['IDF settings'].addFolder('Display parameters');
     idfImportGeneral.close();
@@ -173,7 +173,18 @@ function idf_oneSrf_newClass(sliceLines, included = '!- Surface name') {
 }
 
 export function idf_allSrfClass(idf_srf_brutLines, str = '!- Surface name') {
-    return idf_srf_brutLines.map(Z => idf_oneSrf_newClass(Z, str));
+
+    var ar = new Array();
+    idf_srf_brutLines.forEach(Z => {
+        try {
+            ar.push(idf_oneSrf_newClass(Z, str));
+            console.log('ar:', ar[ar.length-1]);
+
+        } catch (error) { }
+    }
+    )
+    // return idf_srf_brutLines.map(Z => idf_oneSrf_newClass(Z, str));
+    return ar;
 }
 
 export function face_points_fx(surfClass) {

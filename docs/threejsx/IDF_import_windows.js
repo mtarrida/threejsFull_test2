@@ -12,9 +12,14 @@ export function idf_fullManageAndSceneAddObjects_windows(idfData) {
     srf_array
         // .filter(Z => Z.objectName.toLowerCase().includes(srfInclude.toLowerCase()))
         .forEach(Z => {
-            var faces = face_points_fx(Z);
-            var edges = edge_points_fx(Z);
-            i_createObjectFromOneSurface(Z.objectName, faces, edges);
+            try {
+                var faces = face_points_fx(Z);
+                var edges = edge_points_fx(Z);
+                i_createObjectFromOneSurface(Z.objectName, faces, edges);
+                console.log('objectName:', objectName);
+            } catch (error) {
+
+            }
         });
 }
 
@@ -23,9 +28,11 @@ function idf_getWindows_brutLines(lines) {
     // get surface start indexes
     var indexes = lines.multiIndexOf("FenestrationSurface:Detailed,");
     var idf_srf_brutLines = new Array();
-    indexes.forEach(Z =>
+    indexes.forEach(Z => {
         idf_srf_brutLines
             .push(idf_oneSrf_brutLines(lines, Z))
+        // console.log('idf_srf_brutLines:', idf_srf_brutLines[idf_srf_brutLines.length-1])
+    }
     );
 
     idf_srf_brutLines = idf_srf_brutLines.filter(S => !S.find(D => D.includes('Extra Crack')));
